@@ -4,7 +4,7 @@
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>Go WASM loader</title>
-    <script src="/wasm_exec.js"></script>
+    <script src="/wasm_exec.js" type="text/javascript"></script>
     <script defer="defer">
         const go = new Go();
         WebAssembly.instantiateStreaming(fetch("/pfolio.wasm"), go.importObject).then((result) => {
